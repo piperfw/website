@@ -13,4 +13,4 @@ and digital infrastructure.
 
 ### Get Involved
 
-Keep an eye on our [Events]({category}Events) page for upcoming workshops and talks.
+Keep an eye on [Events]({category}Events) for upcoming workshops and talks.
