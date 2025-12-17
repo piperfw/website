@@ -45,7 +45,17 @@ jobs:
       
       - name: Build site
         run: pelican content -s publishconf.py
-      
+
+      - name: List output contents
+        run: |
+          echo "=== Output directory contents ==="
+          ls -laR output/
+          echo ""
+          echo "=== Looking for logo ==="
+          find output -name "cloud-native-sig-logo.png" || echo "Logo not found"
+          echo ""
+          echo "=== Looking for manifest ==="
+          find output -name "manifest.json" || echo "Manifest not found"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
