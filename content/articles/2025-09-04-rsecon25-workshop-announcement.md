@@ -2,7 +2,7 @@ Title: Kubernetes Workshop
 Date: 2025-09-04
 Category: Events
 Tags: events, kubernetes, workshop
-Author: Cloud Native SIG
+Author: Shemlit, Laura
 Summary: Join us at RSECon25 for an introductory workshop on Kubernetes!
 
 It has been a bit quiet from us over the past months as we are trying to start the SIG. We are delighted to announce that we have our first Cloud-Native SIG lead activity, a workshop at RSECon25 on Thursday 11th September.
