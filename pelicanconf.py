@@ -15,7 +15,9 @@ EXTRA_PATH_METADATA = {
     'extra/favicon-16x16.png': {'path': 'favicon-16x16.png'},
     'extra/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
 }
-THEME = 'themes/pelican-alchemy/alchemy'
+# Use THEME environment variable set by GitHub Actions, fallback to local path
+import os
+THEME = os.environ.get('PELICAN_THEME', 'themes/pelican-alchemy/alchemy')
 THEME_TEMPLATES_OVERRIDES = ['themes/custom-alchemy/templates'] # Includes customer footer override
 BOOTSTRAP_CSS = '/theme/css/flatly.min.css' # Bootswatch theme
 PYGMENTS_STYLE = 'monokai' # Code syntax style
