@@ -33,7 +33,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: true  # This checks out your git submodule!
+          submodules: true
+
+      - name: Verify logo exists after checkout
+        run: |
+          echo "=== Checking for logo in content ==="
+          ls -la content/images/
+          find content -name "cloud-native-sig-logo.png"
       
       - name: Setup Python
         uses: actions/setup-python@v4
@@ -52,10 +58,10 @@ jobs:
           ls -laR output/
           echo ""
           echo "=== Looking for logo ==="
-          find output -name "cloud-native-sig-logo.png" || echo "Logo not found"
+          find output -name "cloud-native-sig-logo.png"
           echo ""
           echo "=== Looking for manifest ==="
-          find output -name "manifest.json" || echo "Manifest not found"
+          find output -name "manifest.json"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

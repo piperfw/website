@@ -8,12 +8,13 @@ TIMEZONE = 'Europe/London'
 DEFAULT_LANG = 'en'
 
 # Theming
-STATIC_PATHS = ['extra']
+STATIC_PATHS = ['extra', 'images']
 EXTRA_PATH_METADATA = {
     'extra/css/flatly.min.css': {'path': 'theme/css/flatly.min.css'},
     'extra/favicon-32x32.png': {'path': 'favicon-32x32.png'},
     'extra/favicon-16x16.png': {'path': 'favicon-16x16.png'},
     'extra/apple-touch-icon.png': {'path': 'apple-touch-icon.png'},
+    'images/cloud-native-sig-logo.png', {'path': 'images/cloud-native-sig-logo.png'},
 }
 THEME =  'themes/pelican-alchemy/alchemy'
 THEME_TEMPLATES_OVERRIDES = ['themes/custom-alchemy/templates'] # Includes customer footer override
