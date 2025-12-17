@@ -36,7 +36,6 @@ ARTICLE_PATHS = ['articles']
 LINKS = (
     ('Kubernetes Tutorial', "https://rosalindfranklininstitute.github.io/rsecon25-intro-to-kubernetes/"),
     ("Mailing List", "https://www.jiscmail.ac.uk/cgi-bin/wa-jisc.exe?SUBED1=CLOUDNATIVE-SIG"),
-    ('Events', '/category/events.html')
 )
 # Social icons in header
 ICONS = (
